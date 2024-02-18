@@ -44,7 +44,7 @@ const Footer = () => (
 						<ul>
 							{section.links.map((link) => (
 								<li
-									className="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-gray"
+									className="mt-3 font-montserrat text-base leading-normal text-white-400 hover:text-slate-200"
 									key={link.name}
 								>
 									<a href={link.link}>{link.name}</a>
@@ -69,9 +69,14 @@ const Footer = () => (
 				<p>Copyright. All rights reserved.</p>
 			</div>
 
-			<p className="font-montserrat cursor-pointer hover:text-slate-gray">
-				Terms & Conditions
-			</p>
+			<a
+				href="https://github.com/kastastin/nike-concept"
+				target="_blank"
+				rel="noreferrer"
+				className="font-montserrat cursor-pointer hover:text-slate-200"
+			>
+				Developed by Kastastin
+			</a>
 		</div>
 	</footer>
 );
