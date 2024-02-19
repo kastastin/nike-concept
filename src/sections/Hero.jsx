@@ -12,33 +12,33 @@ const Hero = () => {
 	return (
 		<section
 			id="home"
-			className="w-full min-h-screen flex xl:flex-row flex-col justify-center gap-10 max-container"
+			className="max-container flex min-h-screen w-full flex-col justify-center gap-10 xl:flex-row"
 		>
-			<div className="xl:w-2/5 w-full max-xl:padding-x pt-28 flex flex-col justify-center items-start relative">
-				<p className="text-xl font-montserrat text-coral-red">
+			<div className="max-xl:padding-x relative flex w-full flex-col items-start justify-center pt-28 xl:w-2/5">
+				<p className="font-montserrat text-xl text-coral-red">
 					Our Summer collections
 				</p>
 
-				<h1 className="mt-10 font-palanquin text-8xl max-sm:text-[72px] max-sm:leading-[82px] font-bold">
-					<span className="xl:bg-white xl:whitespace-nowrap relative z-10 pr-10">
+				<h1 className="mt-10 font-palanquin text-8xl font-bold max-sm:text-[72px] max-sm:leading-[82px]">
+					<span className="relative z-10 pr-10 xl:whitespace-nowrap xl:bg-white">
 						The New Arrival
 					</span>
 					<br />
-					<span className="text-coral-red inline-block mt-3">Nike</span> Shoes
+					<span className="mt-3 inline-block text-coral-red">Nike</span> Shoes
 				</h1>
 
-				<p className="font-montserrat text-slate-gray text-lg leading-8 mt-6 mb-14 sm:max-w-sm">
+				<p className="mb-14 mt-6 font-montserrat text-lg leading-8 text-slate-gray sm:max-w-sm">
 					Discover stylish Nike arrivals, quality comfort, and innovation for
 					your active life.
 				</p>
 
 				<Button label="Shop now" iconURL={arrowRight} />
 
-				<div className="flex justify-start items-start flex-wrap w-full mt-20 gap-16">
+				<div className="mt-20 flex w-full flex-wrap items-start justify-start gap-16">
 					{statistics.map((item, i) => (
 						<div key={i}>
-							<p className="text-4xl font-palanquin font-bold">{item.value}</p>
-							<p className="leading-7 font-montserrat text-slate-gray">
+							<p className="font-palanquin text-4xl font-bold">{item.value}</p>
+							<p className="font-montserrat leading-7 text-slate-gray">
 								{item.label}
 							</p>
 						</div>
@@ -46,16 +46,16 @@ const Hero = () => {
 				</div>
 			</div>
 
-			<div className="relative flex-1 flex justify-center items-center xl:min-h-screen max-xl:py-40 bg-primary bg-hero bg-cover bg-center">
+			<div className="relative flex flex-1 items-center justify-center bg-primary bg-hero bg-cover bg-center max-xl:py-40 xl:min-h-screen">
 				<img
 					src={bigShoeImg}
 					alt="shoe colletion"
 					width={610}
 					height={502}
-					className="object-contain relative z-10"
+					className="relative z-10 object-contain"
 				/>
 
-				<div className="flex sm:gap-6 gap-4 absolute -bottom-[5%] sm:left-[10%] max-sm:px-6">
+				<div className="absolute -bottom-[5%] flex gap-4 max-sm:px-6 sm:left-[10%] sm:gap-6">
 					{shoes.map((image, index) => (
 						<div key={index}>
 							<ShoeCard

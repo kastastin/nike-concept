@@ -1,10 +1,10 @@
 const ServiceCard = ({ imgURL, label, subtext }) => (
-	<div className="flex-1 sm:w-[350px] sm:min-w-[350px] w-full rounded-[20px] shadow-3xl px-10 py-16">
-		<div className="w-11 h-11 flex justify-center items-center bg-coral-red rounded-full">
+	<div className="w-full flex-1 rounded-[20px] px-10 py-16 shadow-3xl sm:w-[350px] sm:min-w-[350px]">
+		<div className="flex h-11 w-11 items-center justify-center rounded-full bg-coral-red">
 			<img src={imgURL} alt={label} width={24} height={24} />
 		</div>
 
-		<h3 className="mt-5 font-palanquin text-3xl leading-normal font-bold">
+		<h3 className="mt-5 font-palanquin text-3xl font-bold leading-normal">
 			{label}
 		</h3>
 
